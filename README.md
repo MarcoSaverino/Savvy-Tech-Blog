@@ -1,8 +1,8 @@
 
-# MY RESUME
+# Savvy-Tech-Blog
 
 ## DESCRIPTION
-The purpose of this website is to show potential employers my skills and projects that i have done in order to help me get a job. As discussed in class since we are unable to submit reference projects one of the images has to link to our repo.
+A cms style tech blog site
 
 # USER STORY
 AS A developer who writes about tech
