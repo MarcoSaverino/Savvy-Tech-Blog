@@ -18,3 +18,8 @@ body {
 h1, h2, h3, h4, h5, h6, ul, li, a, p, label, button {
     font-family: 'DM sans', cursive;
 }
+
+.PHistory {
+    color: azure;
+}
+

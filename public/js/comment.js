@@ -11,7 +11,7 @@ async function commentFormHandler(event) {
   ];
 
   if (comment_text) {
-    const response = await fetch("/api/comments", {
+    const userResponse = await fetch("/api/comments", {
       method: "POST",
       body: JSON.stringify({
         post_id,
@@ -22,10 +22,10 @@ async function commentFormHandler(event) {
       },
     });
 
-    if (response.ok) {
+    if (userResponse.ok) {
       document.location.reload();
     } else {
-      alert(response.statusText);
+      alert(userResponse.statusText);
       document.querySelector("#comment-form").style.display = "block";
     }
   }

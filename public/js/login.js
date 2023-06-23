@@ -6,7 +6,7 @@ async function loginFormHandler(event) {
   const password = document.querySelector("#password-login").value.trim();
 
   if (username && password) {
-    const response = await fetch("/api/users/login", {
+    const userResponse = await fetch("/api/users/login", {
       method: "POST",
       body: JSON.stringify({
         username,
@@ -15,10 +15,10 @@ async function loginFormHandler(event) {
       headers: { "Content-Type": "application/json" },
     });
 // Redirect the browser to the dashboard 
-    if (response.ok) {
+    if (userResponse.ok) {
       document.location.replace("/dashboard");
     } else {
-      alert(response.statusText);
+      alert(userResponse.statusText);
     }
   }
 }

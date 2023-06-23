@@ -12,7 +12,7 @@ async function editFormHandler(event) {
   ];
 
   if (title && content) {
-    const response = await fetch(`/api/posts/${id}`, {
+    const userResponse = await fetch(`/api/posts/${id}`, {
       method: "PUT",
       body: JSON.stringify({
         post_id: id,
@@ -24,10 +24,10 @@ async function editFormHandler(event) {
       },
     });
 
-    if (response.ok) {
+    if (userResponse.ok) {
       document.location.replace("/dashboard/");
     } else {
-      alert(response.statusText);
+      alert(userResponse.statusText);
     }
   }
 }

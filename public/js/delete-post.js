@@ -6,7 +6,7 @@ async function deleteFormHandler(event) {
     window.location.toString().split("/").length - 1
   ];
 
-  const response = await fetch(`/api/posts/${id}`, {
+  const userResponse = await fetch(`/api/posts/${id}`, {
     method: "DELETE",
     body: JSON.stringify({
       post_id: id,
@@ -16,10 +16,10 @@ async function deleteFormHandler(event) {
     },
   });
 
-  if (response.ok) {
+  if (userResponse.ok) {
     document.location.replace("/dashboard/");
   } else {
-    alert(response.statusText);
+    alert(userResponse.statusText);
   }
 }
 
