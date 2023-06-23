@@ -49,9 +49,10 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 [![Screenshot](./public/images/Screenshot2.PNG)
 [![Screenshot](./public/images/Screenshot3.PNG)
 [![Screenshot](./public/images/Screenshot4.PNG)
+
 ## LINKS 
 Heroku Link: 
-
+https://thawing-brushlands-62625-ce774ec10e25.herokuapp.com/
 
 GITHUB REPO: 
 https://github.com/MarcoSaverino/Savvy-Tech-Blog
